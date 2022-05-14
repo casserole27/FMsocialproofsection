@@ -1,0 +1,86 @@
+
+
+
+/*
+  Frontend Mentor
+  Profile Card Component
+  C Lewis
+  clewisdev.com
+  May 2022
+*/  
+
+/****** VARIABLES ******/
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%); 
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+/****** GLOBAL STYLES ******/
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1, .title, li {
+    color: var(--very-dark-magenta);
+}
+
+.subtitle {
+    color: var(--dark-grayish-magenta);
+}
+
+div {
+    background-color: var(--very-dark-magenta);
+}
+
+h2 {
+    color: var(--white);
+}
+
+h3 {
+    color: var(--soft-pink);
+}
+
+.review1, .review2, .review3 {
+    color: var(--light-grayish-magenta);
+}
+
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700
+*/
