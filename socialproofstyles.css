@@ -1,6 +1,3 @@
-
-
-
 /*
   Frontend Mentor
   Profile Card Component
@@ -24,6 +21,9 @@
 
 body {
     font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, .title, li {
@@ -48,6 +48,14 @@ h3 {
 
 .review1, .review2, .review3 {
     color: var(--light-grayish-magenta);
+}
+
+/******* MOBILE BODY STYLE ******/
+
+.wrapper {
+    width: 375px;
+    background-color: white;
+    
 }
 
 /*
