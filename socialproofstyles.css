@@ -21,9 +21,12 @@
 
 body {
     font-family: 'League Spartan', sans-serif;
+    background-color: darkgray;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 h1, .title, li {
@@ -34,7 +37,7 @@ h1, .title, li {
     color: var(--dark-grayish-magenta);
 }
 
-div {
+.buyer1, .buyer2, .buyer3 {
     background-color: var(--very-dark-magenta);
 }
 
@@ -57,6 +60,42 @@ h3 {
     background-color: white;
     
 }
+
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2.25rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.subtitle {
+    font-size: 1.15em;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 1.25rem;
+    padding-right: 1.251rem;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 0;
+    background-color: var(--light-grayish-magenta);
+}
+
+
+
+/****** STARS ******
+
+li {
+    background: url(images/icon-star.svg) repeat-x;
+}*/
 
 /*
 # Front-end Style Guide
