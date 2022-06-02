@@ -37,10 +37,6 @@ h1, .title, li {
     color: var(--dark-grayish-magenta);
 }
 
-.buyer1, .buyer2, .buyer3 {
-    background-color: var(--very-dark-magenta);
-}
-
 h2 {
     color: var(--white);
 }
@@ -58,6 +54,7 @@ h3 {
 .wrapper {
     width: 375px;
     background-color: white;
+    padding: 1.5rem;
     
 }
 
@@ -78,7 +75,10 @@ h3 {
     text-align: center;
     padding-left: 1.25rem;
     padding-right: 1.251rem;
+    margin-bottom: 3rem;
 }
+
+/****** RATINGS ******/
 
 ul {
     list-style-type: none;
@@ -86,16 +86,34 @@ ul {
     font-weight: 700;
     text-align: center;
     padding-left: 0;
+}
+
+li {
     background-color: var(--light-grayish-magenta);
+    border-radius: .5rem;
+    width: 85%;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
 }
 
 
+/****** PROFILE REVIEWS ******/
 
-/****** STARS ******
+.colton-image, .irene-image, .anne-image {
+    border-radius: 50%;
+    
+}
 
-li {
-    background: url(images/icon-star.svg) repeat-x;
-}*/
+.buyer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.buyer1, .buyer2, .buyer3 {
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    border-radius: 1rem;
+}
 
 /*
 # Front-end Style Guide
