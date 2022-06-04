@@ -27,6 +27,11 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-areas: 
+        "headings"
+        "reviews"
+        "buyers";                ;
 }
 
 h1, .title, li {
@@ -37,12 +42,18 @@ h1, .title, li {
     color: var(--dark-grayish-magenta);
 }
 
-h2 {
+h3 {
     color: var(--white);
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
 }
 
-h3 {
+h4 {
     color: var(--soft-pink);
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
 }
 
 .review1, .review2, .review3 {
@@ -56,6 +67,10 @@ h3 {
     background-color: white;
     padding: 1.5rem;
     
+}
+
+.headings-wrapper {
+    grid-area: headings;
 }
 
 .title {
@@ -86,6 +101,8 @@ ul {
     font-weight: 700;
     text-align: center;
     padding-left: 0;
+    margin-bottom: 3.5rem;
+    grid-area: reviews;
 }
 
 li {
@@ -99,21 +116,76 @@ li {
 
 /****** PROFILE REVIEWS ******/
 
+.buyer-wrapper {
+    grid-area: buyers;
+}
+
 .colton-image, .irene-image, .anne-image {
     border-radius: 50%;
     
 }
 
-.buyer-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 .buyer1, .buyer2, .buyer3 {
+    width: 85%;
     background-color: var(--very-dark-magenta);
     padding: 2rem;
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
+
+.buyer-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.buyer-headers {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+p {
+    font-size: 1em;    
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.buyer3 {
+    margin-bottom: 5rem;
+}
+
+/******* MEDIA QUERY DESKTOP DESIGN ******/
+@media screen and (min-width: 1000px) {
+    .body {
+        display: grid;
+        grid-template-areas: 
+            "headings reviews"
+            "buyers";
+    }
+    
+    .wrapper {
+        width: 1440px;
+    }
+
+    li {
+        width: 25%;
+    }
+
+    .buyers-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .buyer1, .buyer2, .buyer3 {
+        width: 33%;
+    }
+}
+
+
 
 /*
 # Front-end Style Guide
