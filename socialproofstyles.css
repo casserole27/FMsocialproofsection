@@ -96,16 +96,14 @@ ul {
     font-size: 1.25em;
     font-weight: 700;
     text-align: center;
-    padding-left: 0;
-    margin-bottom: 3.5rem;
+    /*! padding-left: 0; */
+    
 }
 
 li {
     background-color: var(--light-grayish-magenta);
     border-radius: .5rem;
-    width: 85%;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
+    
 }
 
 
@@ -160,25 +158,20 @@ p {
 
     .body-wrapper {
         width: 1440px;
-        padding-left: 10rem;
-        padding-right: 10rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
 
     .heading-ratings-wrapper {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        /*gap: 15rem;*/
     }
 
 /****** HEADING TEXT ******/
 
     
     .headings-wrapper {
-        width: auto;
-        /*width: auto;
-        padding-right: 15rem;*/
+        width: 40%;
+        margin-top: 3rem;
     }
     
    
@@ -199,37 +192,42 @@ p {
    
 /******* RATINGS LIST ******/
     
-/*
     .ratings-wrapper {
-        width: auto;
+        width: 60%;
     }
-*/
 
     ul {
-        font-size: 1em;
+        width: 100%;
         font-weight: 700;
         text-align: left;
-        margin-top: 5rem;
+        margin-top: 7rem;
+        
     }
 
     li {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         gap: 2rem;
         margin-bottom: 1rem;
         padding: 1rem;
     }
 
-    
     .ratings {
-        margin-left: -6rem;
+        margin-left: 3em;
+        margin-right: 9rem;
     }
 
     
     .guru {
-        margin-left: -3rem;
+        margin-left: 8rem;
+        margin-right: 6rem;
     }
+
+    .besttech {
+        margin-left: 13rem;
+        margin-right: 3rem;
+    }
+    
 
 /****** BUYERS TESTIMONY SECTION ******/
 
