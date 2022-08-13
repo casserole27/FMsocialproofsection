@@ -96,13 +96,16 @@ ul {
     font-size: 1.25em;
     font-weight: 700;
     text-align: center;
-    /*! padding-left: 0; */
+    padding-left: 0;
+    margin-bottom: 3rem;
     
 }
 
 li {
     background-color: var(--light-grayish-magenta);
     border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     
 }
 
