@@ -74,6 +74,18 @@ REMEMBER display: flex already flexes the layout, it's not necessary to add flex
 ```
 
 
+I learned more about doing backgrounds.
+This positions two SVGs in the top left and bottom right without repeat, and the percentages size them.
+The max function on background-size helped me to size the SVGs for both mobile and desktop
+
+```css
+.body-wrapper {
+background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: max(50%, 400px), max(50%, 400px);
+}
+
 To see how you can add code snippets, see below:
 
 ```html

@@ -1,6 +1,6 @@
 /*
   Frontend Mentor
-  Profile Card Component
+  Social Proof Section 
   C Lewis
   clewisdev.com
   May 2022
@@ -16,7 +16,6 @@
     --white: hsl(0, 0%, 100%);
 }
 
-/****** MOBILE DESIGN ******/
 /****** GLOBAL STYLES ******/
 
 body {
@@ -27,11 +26,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    /*display: grid;
-    grid-template-areas: 
-        "headings"
-        "reviews"
-        "buyers";*/                ;
+ 
 }
 
 h1, .title, li {
@@ -66,6 +61,10 @@ h4 {
 .body-wrapper {
     width: 375px;
     background-color: white;
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: max(50%, 400px), max(50%, 400px);
     padding: 1.5rem;
 }
 
@@ -160,7 +159,7 @@ p {
     }
 
     .body-wrapper {
-        width: 1440px;
+        width: 1200px;
         padding-left: 12rem;
         padding-right: 12rem;
     }
@@ -217,22 +216,21 @@ p {
 
     .ratings {
         margin-left: 3em;
-        margin-right: 9rem;
+        margin-right: 6rem;
     }
 
     
     .guru {
         margin-left: 8rem;
-        margin-right: 6rem;
+        margin-right: 3rem;
     }
 
     .besttech {
         margin-left: 13rem;
-        margin-right: 3rem;
     }
     
 
-/****** BUYERS TESTIMONY SECTION ******/
+/****** BUYER REVIEWS ******/
 
     .buyer-wrapper {
         display: flex;
