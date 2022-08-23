@@ -85,6 +85,7 @@ The mobile and desktop designs worked seemed to work together seamlessly, wherea
 Reviewing grid and integrating it more, rather than reverting to flexbox always.
 Learning to use transform: translate selector.
 Learning to use flow-content inside of a HTML tag. This was a neat trick, are there others?
+I want to explore Chrome responsive design devtools.
 Implementing a better usage of variables, and overall more efficient CSS. 
 Learning and using SASS. 
 
