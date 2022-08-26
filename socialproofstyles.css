@@ -18,14 +18,22 @@
 
 /****** GLOBAL STYLES ******/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'League Spartan', sans-serif;
-    background-color: darkgray;
+    background-color: white;
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: max(50%, 400px), max(50%, 400px);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    min-height: 100%;
  
 }
 
@@ -60,11 +68,6 @@ h4 {
 
 .body-wrapper {
     width: 375px;
-    background-color: white;
-    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
-    background-position: top left, bottom right;
-    background-repeat: no-repeat;
-    background-size: max(50%, 400px), max(50%, 400px);
     padding: 1.5rem;
 }
 
@@ -153,11 +156,6 @@ p {
 @media screen and (min-width: 1000px) {
     
     
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
     .body-wrapper {
         width: 1200px;
         padding-left: 12rem;
@@ -172,7 +170,7 @@ p {
 
     
     .headings-wrapper {
-        width: 40%;
+        max-width: 40%;
         margin-top: 3rem;
     }
     
@@ -195,11 +193,11 @@ p {
 /******* RATINGS LIST ******/
     
     .ratings-wrapper {
-        width: 60%;
+        max-width: 60%;
     }
 
     ul {
-        width: 100%;
+        max-width: 100%;
         font-weight: 700;
         text-align: left;
         margin-top: 7rem;
